@@ -8,11 +8,14 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
+    const idadecao = parseInt(prompt("Qual a idade do seu cao?"))
+    const porte = prompt("Qual o porte do seu cao (Grande, Medio ou Pequeno)").toLowerCase()
 
     //Processamento
-
+    let mensagemfinal = (porte == "grande") ? (idadecao * 7) : 
+    (porte == "medio" || porte == "médio") ? (idadecao * 6) :
+    (idadecao * 5)
     
     //Saída
-
+    alert(`A idade do seu cao em anos humanos é ${mensagemfinal}`)
 </script>

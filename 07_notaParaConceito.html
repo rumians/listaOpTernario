@@ -10,11 +10,12 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    const nota = parseFloat(prompt("Qual foi a sua nota (0 a 10) ?").replace(",", "."))
 
     //Processamento
 
-    
-    //Saída
+    let mensagemfinal = (nota <= 10 && nota >= 9) ? "Sua nota convertida para conceito é A" : (nota <= 8.9 && nota >= 8) ? "Sua nota convertida para conceito é B" : (nota <= 7.9 && nota >= 7) ? "Sua nota convertida para conceito é C" : (nota <= 6.9 && nota >= 6) ? "Sua nota convertida para conceito é D" : (nota <= 5.9 && nota >= 0) ? "Sua nota convertida para conceito é E" : "Valor Invalido"
 
+    //Saída
+    alert(mensagemfinal)
 </script>

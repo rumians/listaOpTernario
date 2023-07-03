@@ -6,12 +6,19 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
+    const preçocombustivel = parseFloat(prompt("Qual o preço do litro do combustivel ?").replace(",","."))
+    const litros = parseFloat(prompt("Qual a quantidade de litros utilizados para se deslocar para o trabalho diariamente ?").replace(",","."))
+    const transportepubli = parseFloat(prompt("Qual o preço do transporte publico para se deslocar ao trabalho diariamente?").replace(",","."))
 
     //Processamento
+    const cal1 = (preçocombustivel * litros) * 2
+    const cal2 = transportepubli * 2 
 
+
+    let mensagemfinal = ( cal1 > cal2 ) ? `Voce deveria ir de transporte publico pois é mais barato, Transporte publico = ${cal2.toFixed(2)} ,Proprio automovel = ${cal1.toFixed(2)}.` : (cal1 < cal2) ? `Voce deveria ir com seu proprio automovel pois é mais barato, Transporte publico = ${cal2.toFixed(2)} ,Proprio automovel = ${cal1.toFixed(2)}.` : (cal1 == cal2) ? `O preço é o mesmo , escolha por conta propria Transporte publico = ${cal2.toFixed(2)} ,Proprio automovel = ${cal1.toFixed(2)}.` : "Valor invalido"
     
     //Saída
 
-    
+    alert(mensagemfinal)
+
 </script>

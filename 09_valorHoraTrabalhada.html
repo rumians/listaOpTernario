@@ -8,11 +8,12 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
-
+    const horas = parseInt(prompt("Quantas horas voce trabalha semanalmente?"))
+    const dinheiro = parseFloat(prompt("Quanto recebe por hora trabalhada"))
     //Processamento
-
+    let mensagemfinal = (horas <= 45) ? `salario semanal = ${horas * dinheiro}, preço da hora = ${horas}` : 
+    ( horas <= 60) ? `Salario semanal = ${(horas * dinheiro) * 0.2 + horas * dinheiro}, preço da hora = ${((horas * dinheiro) * 0.2 + horas * dinheiro) / horas}` : ( horas > 60) ? `Salario semanal = ${(horas * dinheiro) * 0.3 + horas * dinheiro}, preço da hora = ${((horas * dinheiro) * 0.3 + horas * dinheiro) / horas}` : "valor invalido"
     
     //Saída
-
+    alert(mensagemfinal)
 </script>
