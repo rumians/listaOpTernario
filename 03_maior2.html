@@ -4,11 +4,14 @@
     //Construa um algoritmo que leia dois números inteiros. Verifique qual dos dois números é maior e o escreva.
 
     //Entrada
-
+    
+    const num1 = parseFloat(prompt("Insira um numero"));
+    const num2 = parseFloat(prompt("Insira outro um numero"))
     
     //Processamento
 
-    
-    //Saída
+    let mensagemfinal = "";
+    (isNaN(num1) || isNaN(num2)) ? alert(`Um dos valores nao é um numero`) : mensagemfinal = (num1 > num2) ? "Num1 é maior que num2" : mensagemfinal = "Num2 é maior qu num1";
+    alert (mensagemfinal)
     
 </script>

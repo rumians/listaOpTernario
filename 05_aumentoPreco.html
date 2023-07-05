@@ -8,11 +8,12 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
-
+    const dinheiros = parseFloat(prompt("Qual o preço do produto"))
+    
     //Processamento
-
+    let mensagemfinal = ( dinheiros <= 280) ? (`O produto com o aumento é R$${dinheiros * 0.2 + dinheiros}`) : (dinheiros <= 700) ? `O produto com o aumento é R$${dinheiros * 0.15 + dinheiros}` : (dinheiros <= 1500) ? `O produto com o aumento é R$${dinheiros * 0.1 + dinheiros}` : ( dinheiros > 1500) ? `O produto com o aumento é R$${dinheiros * 0.5 + dinheiros}` : "valor invalido";
     
     //Saída
+    alert(mensagemfinal)
 
 </script>

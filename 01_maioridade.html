@@ -4,11 +4,12 @@
     //Leia a idade de uma pessoa e informe se ela já chegou à maioridade.Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
 
     //Entrada
-
+    const idade = parseFloat(prompt("Qual a sua idade?"))
 
     //Processamento
-
+    let mensagemfinal = (idade >= 18 ) ? "Voce chegou a maioridade" : 
+    "Voce nao chegou a maioridade";
 
     //Saída
-
+    document.write(mensagemfinal);
 </script>
